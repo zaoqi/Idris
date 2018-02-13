@@ -18,8 +18,8 @@ module 語
 類 : Type
 類 = Type
 
-若 : {甲 : 類} -> 陰陽 -> 惰 甲 -> 惰 甲 -> 甲
-若 = ifThenElse
+惰 : 類 -> 類
+惰 = Lazy
 
 陰陽 : 類
 陰陽 = Bool
