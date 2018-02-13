@@ -17,9 +17,17 @@ module 語
 
 類 : Type
 類 = Type
-
+整數 : 類
+整數 = Integer
+字列 : 類
+字列 = String
 惰 : 類 -> 類
 惰 = Lazy
+列 : 類 -> 類
+列 = List
+
+限 : (甲 : 類) -> 甲 -> 甲
+限 _ 物 = 物
 
 陰陽 : 類
 陰陽 = Bool
@@ -29,4 +37,3 @@ module 語
 陽 = True
 若 : {甲 : 類} -> 陰陽 -> 惰 甲 -> 惰 甲 -> 甲
 若 = ifThenElse
-
