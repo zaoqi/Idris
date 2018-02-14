@@ -13,7 +13,7 @@
 
 --    You should have received a copy of the GNU Affero General Public License
  --   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-module 語
+module Idris語
 
 類 : Type
 類 = Type
@@ -28,6 +28,7 @@ module 語
 
 限 : (甲 : 類) -> 甲 -> 甲
 限 _ 物 = 物
+
 
 陰陽 : 類
 陰陽 = Bool
